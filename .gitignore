@@ -1,3 +1,9 @@
 # Project exclude paths
 /out/
 /src/labs/lab2/BenGuericke_StuartSmith/
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/uiDesigner.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/modules.xml
