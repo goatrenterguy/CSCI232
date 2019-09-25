@@ -1,4 +1,0 @@
-Runtime of N=10000
-Selection Sort: .048/5000^2 * 10000^2 = .192s
-Shell Sort:  .009/(5000(log(5000))^2) * (10000(log(10000))^2) = .021s
-Insertion Sort: .087/5000^2 * 10000^2 = .348s
