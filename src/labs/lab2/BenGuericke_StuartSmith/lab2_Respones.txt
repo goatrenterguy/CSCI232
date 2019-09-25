@@ -1,0 +1,28 @@
+Names: Ben Guericke and Stuart Smith
+
+2)  To change ThreeSumFast into FourSumFast we would have to add a third forloop.
+Add value of the index of the array at the index of the new forloop, to the binarysearch int key
+
+3a) logN -Binary Search,  N^3 -ThreeSum,  N^2LogN -ThreeSumFast,  N -Forloop,  1 -StopWatch
+
+3b)
+int count;
+for (int i = 0; i < n; i++){
+    count += 42;
+}
+
+3c) NlogN
+3d)
+0 + 1 = 1
+1 + 1 = 2
+1 + 2 = 3
+2 + 3 = 5
+3 + 5 = 8
+O(2 * 2 * 2 * 2 * 2) = O(2^5) You have two recursive functions to calculate the previous numbers repeated n times thus getting 2^N
+
+3e) (80000^4 / 1000^4) * 36.47 = 149,381.12 sec or 41.5 hours
+
+3f)
+i) T(N^2)
+ii) T(1)
+iii) T(N)
