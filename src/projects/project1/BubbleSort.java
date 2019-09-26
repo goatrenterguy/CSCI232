@@ -1,15 +1,15 @@
 package projects.project1;
 
-public class BubbleSort {
-    public BubbleSort() {
+class BubbleSort {
+    BubbleSort() {
     }
-
-    public int[] bubbleSort(int[] a){
+    //BubbleSort that runs in O(n^2)
+    Comparable[] bubbleSort(Comparable[] a){
         int n = a.length;
         for (int i = 0; i < n; i++){
             for (int j = 0; j < i; j++){
-                if (a[i] > a[j]){
-                    int tmp = a[i];
+                if (a[i].compareTo(a[j]) > 0){
+                    int tmp = (int) a[i];
                     a[i] = a[j];
                     a[j] = tmp;
                 }

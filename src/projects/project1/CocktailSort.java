@@ -1,11 +1,11 @@
 package projects.project1;
 
-public class CocktailSort {
-    public CocktailSort() {
+class CocktailSort {
+    CocktailSort() {
     }
-    //General bubble sort to the first pass
 
-    public int[] cockTailSort(int[] a) {
+    //CockTail sort
+    Comparable[] cockTailSort(Comparable[] a) {
         int end = a.length;
         int start = 0;
         boolean sorted = false;
@@ -13,8 +13,8 @@ public class CocktailSort {
             sorted = true;
             //First outside loop of bubble sort from the bottom up
             for (int i = start; i < end - 1; i++) {
-                if (a[i] < a[i + 1]) {
-                    int tmp = a[i];
+                if (a[i].compareTo(a[i+1]) < 0) {
+                    int tmp = (int) a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = tmp;
                     sorted = false;
@@ -25,8 +25,8 @@ public class CocktailSort {
 
             //Going from left to right
             for (int i = end - 1  ; i >= start; i--) {
-                if (a[i] < a[i + 1]) {
-                    int tmp = a[i];
+                if (a[i].compareTo(a[i+1]) < 0) {
+                    int tmp = (int) a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = tmp;
                     sorted = false;

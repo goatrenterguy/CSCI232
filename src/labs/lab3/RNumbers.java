@@ -2,7 +2,7 @@ package labs.lab3;
 
 import java.util.Random;
 
-public class GenNumbers {
+public class RNumbers {
 
     public static void main(String args[]) {
         int n = 10000;
