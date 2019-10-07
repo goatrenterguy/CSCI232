@@ -20,7 +20,9 @@ class CocktailSort {
                     sorted = false;
                 }
             }
-
+            if (sorted){
+                break;
+            }
             end--;
 
             //Going from left to right
