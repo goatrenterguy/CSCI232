@@ -1,11 +1,11 @@
-package projects.project1;
+package labs.lab5;
 
-public class CocktailSort {
-    public CocktailSort() {
+public class cSort {
+    public cSort() {
     }
 
     //CockTail sort
-    public Comparable[] cockTailSort(Comparable[] a) {
+    public void cSort(Comparable[] a) {
         int end = a.length;
         int start = 0;
         boolean sorted = false;
@@ -13,21 +13,21 @@ public class CocktailSort {
             sorted = true;
             //First outside loop of bubble sort from the bottom up
             for (int i = start; i < end - 1; i++) {
-                if (a[i].compareTo(a[i+1]) < 0) {
+                if (a[i].compareTo(a[i + 1]) < 0) {
                     Comparable tmp = a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = tmp;
                     sorted = false;
                 }
             }
-            if (sorted){
+            if (sorted) {
                 break;
             }
             end--;
 
             //Going from left to right
-            for (int i = end - 1  ; i >= start; i--) {
-                if (a[i].compareTo(a[i+1]) < 0) {
+            for (int i = end - 1; i >= start; i--) {
+                if (a[i].compareTo(a[i + 1]) < 0) {
                     Comparable tmp = a[i];
                     a[i] = a[i + 1];
                     a[i + 1] = tmp;
@@ -36,7 +36,6 @@ public class CocktailSort {
             }
             start++;
         }
-        return a;
     }
 
 }
