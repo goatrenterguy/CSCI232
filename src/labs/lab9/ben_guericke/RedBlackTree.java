@@ -98,6 +98,7 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
             this.val = val;
             this.color = color;
             this.size = size;
+
         }
     }
 
@@ -201,7 +202,6 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
 
         root = put(root, key, val);
         root.color = BLACK;
-        
         // assert check();
     }
 
@@ -570,7 +570,7 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         int cmp = key.compareTo(x.key); 
         if      (cmp < 0) return rank(key, x.left); 
         else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right); 
-        else              return size(x.left); 
+        else              return size(x.left);
     } 
 
    /***************************************************************************
@@ -618,8 +618,8 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         if (cmplo < 0) keys(x.left, queue, lo, hi); 
         if (cmplo <= 0 && cmphi >= 0) queue.enqueue(x.key); 
         if (cmphi > 0) keys(x.right, queue, lo, hi);
-
-    } 
+        System.out.println("Key: " + x.key + " Value: " + x.val + " Color: " + x.color);
+    }
 
     /**
      * Returns the number of keys in the symbol table in the given range.
@@ -722,7 +722,7 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
      * @param args the command-line arguments
      */
     public static void main(String[] args) throws FileNotFoundException { 
-        RedBlackTree<String, Integer> st = new RedBlackTree<String, Integer>();
+        RedBlackTreeLab8_9<String, Integer> st = new RedBlackTreeLab8_9<String, Integer>();
         File file = new File(args[0]);
         Scanner scanner = new Scanner(file);
         
@@ -730,10 +730,10 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         while (scanner.hasNext()) {
             String key = scanner.next();
             st.put(key, i++);
+            st.keys();
         }
-        for (String s : st.keys())
-            System.out.println(s + " " + st.get(s));
-        System.out.println();
+
+
     }
 }
 

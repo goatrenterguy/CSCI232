@@ -1,6 +1,6 @@
 package labs.lab5;
 
-import projects.project1.StopWatch;
+import Programs.program1.StopWatch;
 
 import java.io.File;
 import java.io.FileNotFoundException;

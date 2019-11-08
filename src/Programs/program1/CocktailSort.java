@@ -1,4 +1,4 @@
-package projects.project1;
+package Programs.program1;
 
 public class CocktailSort {
     public CocktailSort() {

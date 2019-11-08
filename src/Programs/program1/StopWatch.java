@@ -4,7 +4,7 @@
  * and open the template in the editor.
  * Taken from Algorithms, 4th edition, by by Robert Sedgewick and Kevin Wayne 
  */
-package projects.project1;
+package Programs.program1;
 
 /**
  *

@@ -1,6 +1,6 @@
-package projects.project1;
+package Programs.program1;
 
-class BubbleSort {
+public class BubbleSort {
     BubbleSort() {
     }
     //BubbleSort that runs in O(n^2)

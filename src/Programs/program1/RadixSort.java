@@ -1,6 +1,6 @@
-package projects.project1;
+package Programs.program1;
 
-class RadixSort{
+public class RadixSort{
     RadixSort(){}
 
     int[] radixSort(int[] randNums) {
