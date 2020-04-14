@@ -1,4 +1,4 @@
-package Programs.program2;
+package Programs.program3;
 
 public class MsuClass {
     String name;
@@ -6,21 +6,22 @@ public class MsuClass {
     private int seats;
     String title;
     String whenWhere;
+    String prof;
 
-
-    public MsuClass(String name, int sects, int seats, String title, String whenWhere) {
+    public MsuClass(String name, int sects, int seats, String title, String whenWhere, String prof) {
         this.name = name;
         this.sects = sects;
         this.seats = seats;
         this.title = title;
         this.whenWhere = whenWhere;
+        this.prof =prof;
     }
 
     public String getName() {
         return name;
     }
 
-
+    public String getProf() { return prof; }
 
     public void addSeats(int add) {
         seats += add;
